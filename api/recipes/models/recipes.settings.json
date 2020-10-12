@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "Recipes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Created": {
+      "type": "date"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Tags": {
+      "type": "enumeration",
+      "enum": [
+        "Accessibility",
+        "Drupal",
+        "Theming",
+        "JS",
+        "Styleguides",
+        "CSS"
+      ],
+      "required": true,
+      "default": "Theming"
+    },
+    "Summary": {
+      "type": "string"
+    }
+  }
+}
