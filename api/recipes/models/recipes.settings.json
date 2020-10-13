@@ -23,7 +23,8 @@
     },
     "Author": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "Author"
     },
     "Tags": {
       "type": "enumeration",

@@ -53,6 +53,10 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "Author": {
+      "via": "Author",
+      "collection": "recipes"
     }
   }
 }
